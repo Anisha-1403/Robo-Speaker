@@ -1,5 +1,7 @@
 import pyttsx3
 
+input("Press Enter to start RoboSpeaker...")  # Prevents instant closure at the start
+
 if __name__ == '__main__':
     print("Welcome to RoboSpeaker 1.1. Created by Me")
     
@@ -13,3 +15,6 @@ if __name__ == '__main__':
             break
         engine.say(x)
         engine.runAndWait()
+
+# Keep window open after execution
+input("\nPress Enter to exit...")
